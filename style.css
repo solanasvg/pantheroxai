@@ -1,0 +1,773 @@
+body {
+  background-color: #000;
+}
+.container {
+  top: 10%;
+  left: 35%;
+  position: absolute;
+}
+.forehead {
+  display: inline-block;
+}
+.forehead .triangle1 {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 56px solid #141414;
+  transform: rotate(-65deg);
+}
+.forehead .triangle1::after {
+  content: "";
+  display: inline-block;
+  border-left: 75px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 55px solid #141414;
+  position: relative;
+  left: 30px;
+  top: 233px;
+  transform: rotate(-48deg) rotateX(180deg);
+}
+
+.forehead .triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 80px solid #191919;
+  position: relative;
+  left: 111px;
+  bottom: 72px;
+}
+
+.forehead .triangle3 {
+  width: 0;
+  height: 0;
+  border-left: 113px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid #121212;
+  transform: rotate(45deg);
+  position: relative;
+  left: 84px;
+  bottom: 118px;
+}
+
+.forehead .triangle3::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 113px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid #121212;
+  transform: rotateY(180deg) rotate(90deg);
+  position: relative;
+  right: 100px;
+  left: -40px;
+  bottom: 102px;
+}
+
+.forehead .triangle4 {
+  width: 0;
+  height: 0;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  border-bottom: 100px solid #191919;
+  position: relative;
+  bottom: 180px;
+  left: 63px;
+  transform: rotate(-2.5deg);
+}
+.forehead .triangle4::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 102px solid #191919;
+  position: relative;
+  bottom: -5px;
+  left: 102px;
+  transform: rotate(5.5deg);
+}
+
+.forehead .triangle5 {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 23px solid #202020;
+  position: relative;
+  bottom: 205px;
+  left: 167px;
+}
+
+.forehead .trapezoid1 {
+  width: 10px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid #191919;
+  position: absolute;
+  bottom: 107px;
+  left: 8px;
+  transform: rotate(-63deg);
+}
+.forehead .trapezoid1::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid #191919;
+  position: relative;
+  top: 247.5px;
+  left: 28px;
+  transform: rotate(-53deg) rotateX(180deg);
+}
+
+.forehead .trapezoid2 {
+  width: 43px;
+  border-left: 52px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #202020;
+  position: absolute;
+  left: 118px;
+  bottom: 109px;
+}
+.forehead .trapezoid2::after {
+  content: "";
+  display: inline-block;
+  width: 43px;
+  border-left: 52px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 40px solid #121212;
+  position: absolute;
+  left: -52px;
+  bottom: -139px;
+  transform: rotateX(180deg);
+}
+
+.stripes {
+  display: inline-block;
+}
+.stripes .stripe1 {
+  width: 10px;
+  height: 90px;
+  background-color: white;
+  position: relative;
+  right: 120px;
+  bottom: 170px;
+  transform: rotate(-10deg);
+}
+.stripes .stripe1::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 90px;
+  background-color: white;
+  position: relative;
+  left: 280px;
+  top: 50px;
+  transform: rotateY(180deg) rotate(-25deg);
+}
+
+.stripes .stripe2 {
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  right: 84px;
+  bottom: 102px;
+  transform: rotate(-34deg);
+}
+
+.stripes .stripe2::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  left: 174px;
+  bottom: -116px;
+  transform: rotate(68deg);
+}
+
+.stripes .stripe3 {
+  width: 10px;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  right: 30px;
+  bottom: 54px;
+  transform: rotate(-50deg);
+}
+.stripes .stripe3::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  left: 66px;
+  bottom: -78px;
+  transform: rotate(98deg);
+}
+.stripes .stripe4 {
+  width: 10px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 30px;
+  transform: rotate(0deg);
+}
+.stripes .stripe4::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  right: -53px;
+  bottom: 0px;
+  transform: rotate(0deg);
+}
+.stripes .stripe5 {
+  width: 10px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  right: 14px;
+  bottom: 6px;
+  transform: rotate(40deg);
+}
+.stripes .stripe5::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  left: 54px;
+  bottom: 46px;
+  transform: rotate(-80deg);
+}
+
+.stripes .stripe6 {
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  right: 57px;
+  bottom: -6px;
+  transform: rotate(-50deg);
+}
+
+.stripes .stripe6::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  right: -98px;
+  bottom: -120px;
+  transform: rotate(-80deg);
+}
+
+.stripes .stripe7 {
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  right: 108px;
+  bottom: 30px;
+  transform: rotate(40deg);
+}
+
+.stripes .stripe7::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  right: -194px;
+  bottom: 170px;
+  transform: rotate(95deg);
+}
+
+.stripes .stripe8 {
+  width: 150px; 
+  height: 100px;  
+  border: solid 10px white;
+  border-color: white transparent transparent transparent;
+  border-radius: 50%/100px 80px 0 0;
+  position: absolute;
+  transform: rotate(220deg);
+  right: -23px;
+  bottom: -30px;
+}
+
+.stripes .stripe8::after {
+  content: "";
+  width: 150px; 
+  height: 100px;  
+  border: solid 10px white;
+  border-color: white transparent transparent transparent;
+  border-radius: 50%/100px 80px 0 0;
+  position: absolute;
+  transform: rotate(285deg);
+  right: 109px;
+  bottom: -121px;
+}
+
+.stripes .stripe9 {
+  width: 10px;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  bottom: -90px;
+  transform: rotate(-30deg);
+}
+.stripes .stripe9::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  right: -75px;
+  bottom: -41px;
+  transform: rotate(60deg);
+}
+.stripes .stripe10 {
+  width: 80px; 
+  height: 100px;  
+  border: solid 10px white;
+  border-color: white transparent transparent transparent;
+  border-radius: 70%/100px 80px 0 0;
+  position: absolute;
+  transform: rotate(0deg);
+  right: -67px;
+  bottom: -184px;
+}
+.stripes .stripe11 {
+  width: 10px;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  right: 91px;
+  bottom: -110px;
+  transform: rotate(-45deg);
+}
+.stripes .stripe11::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  right: -155px;
+  bottom: -160px;
+  transform: rotate(90deg);
+}
+.stripes .stripe12 {
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  right: 60px;
+  bottom: -148px;
+  transform: rotate(-15deg);
+}
+.stripes .stripe12::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  right: -157px;
+  bottom: -45px;
+  transform: rotate(25deg);
+}
+.stripes .stripe13 {
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  right: 63px;
+  bottom: -192px;
+  transform: rotate(25deg);
+}
+.stripes .stripe13::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 43px;
+  background-color: white;
+  position: absolute;
+  right: -155px;
+  bottom: 74px;
+  transform: rotate(-45deg);
+}
+
+.eye {
+  margin: 100px;
+  width: 70px;
+  height: 30px;
+  border: solid 0px #000;
+  border-radius:  75% 15%;
+  background-color: white;
+  position: absolute;
+  bottom: -100px;
+  right: -60px;
+  transform: rotate(45deg);
+}
+.eye::after {
+  content: "";
+  display: inline-block;
+  margin: 100px;
+  width: 70px;
+  height: 30px;
+  border: solid 0px #000;
+  border-radius:  15% 75%;
+  background-color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  transform: rotate(90deg);
+}
+
+.nose {
+  display: inline-block;
+  position: absolute;
+}
+.nose .square1 {
+  width: 42px;
+  height: 42px;
+  background-color: #121212;
+  position: relative;
+  top: 218px;
+  right: 5px;
+}
+.nose .trapezoid1 {
+  width: 44px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 23px solid #121212;
+  position: absolute;
+  top: 255px;
+  left: -16px;
+}
+.nose .trapezoid1::after {
+  content: "";
+  display: inline-block;
+  width: 74px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 25px solid #121212;
+  position: absolute;
+  top: 23px;
+  left: -28px;
+}
+.nose .trapezoid1::before {
+  content: "";
+  display: inline-block;
+  width: 68px;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-bottom: 45px solid #121212;
+  position: absolute;
+  top: 46px;
+  left: -35px;
+  transform: rotateX(180deg);
+}
+.nose .trapezoid2 {
+  width: 19px;
+  border-left: 25px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 23px solid #191919;
+  position: absolute;
+  top: 230px;
+  left: -44px;
+  transform: rotate(128deg);
+}
+.nose .trapezoid2::after {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  border-left: 25px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 23px solid #191919;
+  position: absolute;
+  top: -62px;
+  left: -70px;
+  transform: rotate(280deg) rotateX(180deg);
+}
+
+.nose .rectangle1 {
+  width: 68px;
+  height: 43px;
+  background-color: #191919;
+  position: relative;
+  top: 152px;
+  right: 90px;
+  transform: rotate(40deg);
+}
+
+.nose .rectangle1::after {
+  content: "";
+  display: inline-block;
+  width: 73px;
+  height: 43px;
+  background-color: #191919;
+  position: relative;
+  top: -95px;
+  right: -108px;
+  transform: rotate(98deg);
+}
+.nose .triangle1 {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 62px solid #202020;
+  transform: rotate(94deg);
+  position: relative;
+  right: 172px;
+  top: 59px;
+}
+.nose .triangle1::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 62px solid #202020;
+  transform: rotate(171deg);
+  position: relative;
+  right: 94px;
+  top: -227px;
+}
+.nose .triangle2 {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 65px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 65px solid #202020;
+  transform: rotate(80deg);
+  position: relative;
+  right: 165px;
+  top: -195px;
+  z-index: -1;
+}
+.nose .triangle2::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 65px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 65px solid #202020;
+  transform: rotate(70deg);
+  position: relative;
+  right: 8px;
+  top: -265px;
+  z-index: -1;
+}
+.nose .arc1 {
+  position: relative;
+  background: #191919;
+  display: inline-block;
+  width: 145px; 
+  height: 145px;  
+  top: 5px;
+  right: 127px;
+  z-index: -1;
+  transform: rotate(-5deg);
+}
+.nose .arc1::before {
+  content: "";
+  position: relative;
+  background: #191919;
+  display: inline-block;
+  width: 145px; 
+  height: 155px;  
+  top: 5px;
+  right: -142px;
+  z-index: -1;
+  transform: rotate(12deg);
+}
+
+.nose .triangle3 {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-top: 140px solid #0c0c0c;
+  position: relative;
+  bottom: 60px;
+  left: -57px;
+  transform: rotate(0deg);
+  z-index: -1;
+}
+.nose .triangle3::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-top: 140px solid #0c0c0c;
+  position: relative;
+  bottom: 100px;
+  left: -55px;
+  transform: rotateX(180deg);
+  z-index: -1;
+}
+.nose .trapezoid3 {
+  width: 184px;
+  border-left: 46px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 133px solid #191919;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 364px;
+  left: -122px;
+  transform: rotate(180deg);
+  z-index: -2;
+}
+
+.necklace{
+  display: inline-block;
+  position: absolute;
+}
+.necklace .triangle1 {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 95px solid transparent;
+  border-top: 22px solid #fff;
+  transform: rotate(90deg);
+  position: relative;
+  right: 62px;
+  top: 565px;
+}
+.necklace .triangle1::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 95px solid transparent;
+  border-top: 22px solid #d7d7d7;
+  transform: rotate(0deg) rotateX(180deg);
+  position: relative;
+  right: 35px;
+  top: -46px;
+}
+
+.necklace .triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 85px solid transparent;
+  border-top: 20px solid #fff;
+  transform: rotate(110deg);
+  position: relative;
+  right: 146px;
+  top: 525px;
+}
+.necklace .triangle2::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 85px solid transparent;
+  border-top: 20px solid #d7d7d7;
+  transform: rotate(0deg) rotateX(180deg);
+  position: relative;
+  right: 25px;
+  top: -42px;
+}
+.necklace .triangle3 {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 15px solid #fff;
+  transform: rotate(125deg);
+  position: relative;
+  right: 220px;
+  top: 470px;
+}
+.necklace .triangle3::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 15px solid #d7d7d7;
+  transform: rotate(0deg) rotateX(180deg);
+  position: relative;
+  right: 20px;
+  top: -32px;
+}
+.necklace .triangle4 {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 85px solid transparent;
+  border-top: 20px solid #fff;
+  transform: rotate(70deg);
+  position: relative;
+  right: -50px;
+  top: 500px;
+}
+.necklace .triangle4::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 85px solid transparent;
+  border-top: 20px solid #d7d7d7;
+  transform: rotate(0deg) rotateX(180deg);
+  position: relative;
+  right: 25px;
+  top: -42px;
+}
+.necklace .triangle5 {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 15px solid #fff;
+  transform: rotate(55deg);
+  position: relative;
+  right: -140px;
+  top: 448px;
+}
+.necklace .triangle5::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 15px solid #d7d7d7;
+  transform: rotate(0deg) rotateX(180deg);
+  position: relative;
+  right: 20px;
+  top: -32px;
+}
